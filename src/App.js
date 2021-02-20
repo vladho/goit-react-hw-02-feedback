@@ -11,20 +11,14 @@ class App extends Component {
     bad: 0,
   }
 
-  // onClickGoodBtn = () => {
-  //   this.setState({ good: this.state.good + 1 })
-  // }
-  // onClickNeutralBtn = () => {
-  //   this.setState({ neutral: this.state.neutral + 1 })
-  // }
-  // onClickBadBtn = () => {
-  //   this.setState({ bad: this.state.bad + 1 })
-  // }
-  onClickBtn = () => {
-    console.log(this.state)
-    const blabla = [this.state]
-    console.log(blabla)
-    blabla.map((el) => console.log(el))
+  onClickGoodBtn = () => {
+    this.setState({ good: this.state.good + 1 })
+  }
+  onClickNeutralBtn = () => {
+    this.setState({ neutral: this.state.neutral + 1 })
+  }
+  onClickBadBtn = () => {
+    this.setState({ bad: this.state.bad + 1 })
   }
 
   countTotalFeedback = () => {
@@ -41,7 +35,7 @@ class App extends Component {
     return (
       <>
         <Section title="Please leave feedback">
-          <Button onClickGoodBtn={this.onClickGoodBtn} onClickNeutralBtn={this.onClickNeutralBtn} onClickBadBtn={this.onClickBadBtn} onClickBtn={this.onClickBtn} />
+          <Button onClickGoodBtn={this.onClickGoodBtn} onClickNeutralBtn={this.onClickNeutralBtn} onClickBadBtn={this.onClickBadBtn} />
         </Section>
 
         <Section title="Statistics">

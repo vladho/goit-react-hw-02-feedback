@@ -1,20 +1,11 @@
 import React from "react"
 import { btn } from "./Button.module.css"
 
-const Button = ({ onClickGoodBtn, onClickNeutralBtn, onClickBadBtn, onClickBtn }) => {
+const Button = ({ onClickGoodBtn, onClickNeutralBtn, onClickBadBtn }) => {
   // console.log(onClickBtn)
   return (
     <>
-      <button className={btn} onClick={onClickBtn}>
-        good
-      </button>
-      <button className={btn} onClick={onClickBtn}>
-        neutral
-      </button>
-      <button className={btn} onClick={onClickBtn}>
-        bad
-      </button>
-      {/* <button className={btn} onClick={onClickGoodBtn}>
+      <button className={btn} onClick={onClickGoodBtn}>
         good
       </button>
       <button className={btn} onClick={onClickNeutralBtn}>
@@ -22,7 +13,7 @@ const Button = ({ onClickGoodBtn, onClickNeutralBtn, onClickBadBtn, onClickBtn }
       </button>
       <button className={btn} onClick={onClickBadBtn}>
         bad
-      </button> */}
+      </button>
     </>
   )
 }
