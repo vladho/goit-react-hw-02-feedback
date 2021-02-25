@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Button from "./components/Button/Button"
-import Section from "./components/Button/Section/Section"
-import Statistics from "./components/Button/Statistics/Statistics"
+import Section from "./components/Section/Section"
+import Statistics from "./components/Statistics/Statistics"
 import Notification from "./components/Notification/Notification"
 
 class App extends Component {
