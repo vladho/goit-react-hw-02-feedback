@@ -1,15 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { btn } from "./Button.module.css"
-
+import styles from "./Button.module.css"
 const Button = ({ option, onLeaveFeedback }) => {
-  // console.log(option)
   return (
-    <>
-      <button className={btn} onClick={() => onLeaveFeedback(option)}>
-        {option}
-      </button>
-    </>
+    <button className={styles.btn} onClick={() => onLeaveFeedback(option)}>
+      {option}
+    </button>
   )
 }
 

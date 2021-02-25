@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Button from "./components/Button/Button"
+import FeedbackOptions from "./components/FeedbackOptions/FeedbackOptions"
 import Section from "./components/Section/Section"
 import Statistics from "./components/Statistics/Statistics"
 import Notification from "./components/Notification/Notification"
@@ -31,9 +31,7 @@ class App extends Component {
     return (
       <>
         <Section title="Please leave feedback">
-          {option.map((el) => (
-            <Button key={el} option={el} onLeaveFeedback={this.onLeaveFeedback} />
-          ))}
+          <FeedbackOptions option={option} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
 
         <Section title="Statistics">
